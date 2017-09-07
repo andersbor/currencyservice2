@@ -18,7 +18,7 @@ namespace currencyService2.Tests
             rate = cur.Rate(CurrencyCode.EUR, CurrencyCode.USD);
             Assert.AreEqual(1.126, rate, 0.01);
             rate = cur.Rate(CurrencyCode.SEK, CurrencyCode.EUR);
-            Assert.AreEqual(0.104, rate, 0.01);
+            Assert.AreEqual(0.104, rate, 0.001);
 
       
         }
