@@ -20,6 +20,8 @@ namespace currencyService2
             Add(bgn);
             Currency sek = new Currency { Code = CurrencyCode.SEK, Name = "Swedish Kroner", Rate = 0.7817 };
             Add(sek);
+            Currency nok = new Currency() { Code = CurrencyCode.NOK, Name = "Norwegian Krone", Rate = 0.875 };
+            Add(nok);
         }
 
         public bool Add(Currency currency)

@@ -2,9 +2,12 @@
 {
     public enum CurrencyCode
     {
-        AUD, BGN, EUR, SEK, DKK, USD
+        AUD, BGN, EUR, SEK, DKK, USD, NOK
     }
 
+    /// <summary>
+    /// Currency class
+    /// </summary>
     public class Currency
     {
         public CurrencyCode Code { get; set; }
