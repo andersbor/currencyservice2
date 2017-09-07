@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.ServiceModel;
 
 namespace currencyService2
@@ -8,6 +9,9 @@ namespace currencyService2
     {
         [OperationContract]
         double GetRate(CurrencyCode codeFrom, CurrencyCode codeTo);
+
+        [OperationContract]
+        ICollection<Currency> GetAllCurrencyInfos();
     }
 
     // Use a data contract as illustrated in the sample below to add composite types to service operations.

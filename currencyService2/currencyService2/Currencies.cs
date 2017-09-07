@@ -46,6 +46,11 @@ namespace currencyService2
             return null;
         }
 
+        public ICollection<Currency> GetCurrencies()
+        {
+            return _currencies.Values;
+        }
+
         public double Rate(CurrencyCode fromCode, CurrencyCode toCode)
         {
             Currency fromCurrency = Get(fromCode);

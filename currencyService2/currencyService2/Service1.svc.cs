@@ -1,4 +1,6 @@
-﻿namespace currencyService2
+﻿using System.Collections.Generic;
+
+namespace currencyService2
 {
     public class CurrencyService : ICurrencyService
     {
@@ -9,5 +11,9 @@
             return currencies.Rate(codeFrom, codeTo);
         }
 
+        public ICollection<Currency> GetAllCurrencyInfos()
+        {
+            return currencies.GetCurrencies();
+        }
     }
 }
