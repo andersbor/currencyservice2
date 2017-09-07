@@ -2,7 +2,7 @@
 {
     public enum CurrencyCode
     {
-        AUD, BGN, EUR, SEK, DKK, USD, NOK
+        AUD, BGN, EUR, SEK, DKK, USD, NOK, CZK
     }
 
     /// <summary>
